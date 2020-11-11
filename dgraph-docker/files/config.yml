@@ -1,0 +1,5 @@
+my: 127.0.0.1
+replicas: 3
+idx: 1
+v: 2
+expose_trace: true

@@ -1,0 +1,11 @@
+---
+# tasks file for dgraph-docker
+- block:
+    - name: make zero directory volume
+      file:
+        path: zero
+        state: directory
+
+    - name: start dgraph by running docker-compose
+      community.general.docker_compose:
+        project_src: dgraph-docker/files/

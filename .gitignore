@@ -1,0 +1,6 @@
+# created by virtualenv automatically
+bin/
+lib/
+ansible.cfg
+pyvenv.cfg
+zero/
