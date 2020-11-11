@@ -1,7 +1,8 @@
 version: "3.2"
 services:
-  zero1:
-    image: dgraph/dgraph:latest #should we add a specific version internally, so that the image pull process always pulls same version?
+  zero:
+    image: dgraph/dgraph:latest #version confirm
+    container_name: zero
     ports:
       - "5080:5080"
       - "6080:6080"
@@ -13,6 +14,6 @@ services:
         max-size: "100k"
         max-file: "10"
     volumes:
-      - dgraph-docker/files/config_zero.yaml:/config.yaml
-      - dgraph-docker/zero:/zero
-    command: dgraph zero --ludicrous_mode --config /config.yaml
+      - ./config.yml:/config.yml
+      - ~/zero:/dgraph
+    command: dgraph zero --ludicrous_mode --config /config.yml
