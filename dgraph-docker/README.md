@@ -1,7 +1,7 @@
-Role Name
+dgraph-docker
 =========
 
-A brief description of the role goes here.
+dgraph-docker is a role that will deploy dgraph in docker.
 
 Requirements
 ------------
