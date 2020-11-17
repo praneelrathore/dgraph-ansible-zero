@@ -5,3 +5,4 @@
   become: yes
   roles:
     - ./dgraph-docker/zero
+    - ./dgraph-docker/alpha

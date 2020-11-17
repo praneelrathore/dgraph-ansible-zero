@@ -1,0 +1,3 @@
+---
+# defaults file for dgraph-docker
+version: v20.07.2
