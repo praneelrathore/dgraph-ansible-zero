@@ -7,4 +7,4 @@
 
 - name: start dgraph by running docker-compose
   community.general.docker_compose:
-    project_src: dgraph-docker/files/
+    project_src: dgraph-docker/zero/files/
