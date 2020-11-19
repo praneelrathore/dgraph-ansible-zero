@@ -1,0 +1,8 @@
+---
+# defaults file for dgraph-docker
+version: "v20.07.2"
+container_name: zero
+port_mapping_1: 5080
+port_mapping_2: 6080
+config_file: config.yml
+alpha_volume: "~/zero"

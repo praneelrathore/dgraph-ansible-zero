@@ -1,4 +1,4 @@
-my: 127.0.0.1:5080
+my: zero:5080
 replicas: 1
 idx: 1
 v: 2

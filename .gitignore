@@ -3,5 +3,6 @@ bin/
 lib/
 ansible.cfg
 pyvenv.cfg
-zero/
-!dgraph-docker/zero
+alpha
+.vscode
+zero

@@ -1,8 +1,8 @@
 ---
 - name: dgraph_setup
+  gather_facts: false
   hosts: 127.0.0.1
   connection: local
   become: yes
   roles:
-    - ./dgraph-docker/zero
-    - ./dgraph-docker/alpha
+    - ./

@@ -1,3 +1,4 @@
-# dgraph-ansible
+dgraph-ansible-zero
+=========
 
-Ansible playbook for using dgraph with docker.
+dgraph-ansible-zero is a role that will start dgraph zero in docker.
