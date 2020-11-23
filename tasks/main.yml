@@ -1,10 +1,4 @@
 ---
-# tasks file for dgraph-docker
-- name: make zero directory volume
-  file:
-    path: zero
-    state: directory
-
 # add check if image already present
 - name: Pull dgraph image
   docker_image:
@@ -20,7 +14,7 @@
       - "{{ port_mapping_1 }}:5080"
       - "{{ port_mapping_2 }}:6080"
     volumes:
-      - "zero:/dgraph/"
+      - "{{ playbook_dir }}/zero:/dgraph/"
       - "{{ playbook_dir }}/files/config.yml:/dgraph/config.yml"
     command: dgraph zero --ludicrous_mode --config /dgraph/config.yml
     container_default_behavior: compatibility
