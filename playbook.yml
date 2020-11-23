@@ -1,5 +1,5 @@
 ---
-- name: dgraph_setup
+- name: dgraph_zero
   gather_facts: false
   hosts: 127.0.0.1
   connection: local

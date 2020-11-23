@@ -19,10 +19,8 @@
     ports:
       - "{{ port_mapping_1 }}:5080"
       - "{{ port_mapping_2 }}:6080"
-    mounts:
-      - source: "config.yml"
-        target: "/config.yml"
-      - source: "zero"
-        target: "/zero"
-    command: dgraph zero --ludicrous_mode
+    volumes:
+      - "zero:/dgraph/"
+      - "{{ playbook_dir }}/files/config.yml:/dgraph/config.yml"
+    command: dgraph zero --ludicrous_mode --config /dgraph/config.yml
     container_default_behavior: compatibility
